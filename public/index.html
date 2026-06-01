@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload with QR Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Secure File Sharing<br>
+    via QR Code</h1>
+    
+
+
+    <div class="box box1">
+        <form id="uploadForm">
+            <label for="fileInput">Drag & Drop Files Here</label>
+            <div id="dropArea" style="border: 2px dashed #fafafa; padding: 20px; text-align: center;">
+                <label>Drop files here or click to select</label>
+            </div>
+            <input type="file" id="fileInput" multiple accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.txt">
+            
+            <label for="securityKey">Security Key:</label>
+            <input type="password" id="securityKey" placeholder="Enter security key" required>
+            
+            <button type="button" id="uploadButton">Upload</button>
+            <pre id="output"></pre>
+        </form>
+        <p id="uploadMessage"></p>
+    </div>
+    <div class="box box2">
+        <h3>QR Code</h3>
+        <div id="qrCodeContainer">Enter a security key and upload a file to generate a QR Code.</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

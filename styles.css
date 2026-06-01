@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.box {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.box1 {
+    background-color: #f0f8ff;
+}
+
+.box2 {
+    background-color: #fdf6e3;
+    text-align: center;
+}
+
+#dropArea {
+    border: 2px dashed #3498db;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 85%;
+    text-align: center;
+    cursor: pointer;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 94%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#uploadMessage {
+    margin-top: 10px;
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+}
+
+#qrCodeContainer {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+
+
+
+
